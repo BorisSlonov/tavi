@@ -48,6 +48,7 @@
 
             .how-work__text {
                 @include text-gredient;
+                
             }
 
             .how-work__link {
@@ -85,6 +86,7 @@
 
     &__text {
         margin-left: 1rem;
+        colo: $sec-text;
     }
 
 }

@@ -49,10 +49,6 @@ body {
   padding: 0 15px;
 }
 
-a {
-  color: #535353;
-}
-
 @media (max-width: 768px) {
   html,
   body {
@@ -848,6 +844,7 @@ a {
 
 .how-work__text {
   margin-left: 1rem;
+  colo: #535353;
 }
 
 .inline-svg-icon {
