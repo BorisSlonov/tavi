@@ -1113,7 +1113,7 @@ body {
   min-width: 0;
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
-  margin-left: -20px;
+  margin-left: -30px;
 }
 
 .dr-slider__slide {
