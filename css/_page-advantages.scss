@@ -5,6 +5,8 @@
 }
 
 .advantages {
+    position: relative;
+    z-index: 2;
     display: flex;
     align-items: flex-start;
     margin-top: 2rem;
@@ -70,7 +72,7 @@
         &__row {
             justify-content: space-between;
         }
-        
+
         &__num {
             font-size: 18px;
 
@@ -80,5 +82,109 @@
 
     .plus__span {
         font-size: 18px;
+    }
+}
+
+
+
+//advantages-bg 
+
+.advantages-bg {
+    position: relative;
+    z-index: 1;
+    background-image: url(../img/advantages-bg.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
+    border-top: 1px solid transparent;
+}
+
+.advantages_bg_content {
+    position: relative;
+    margin-top: 30vh;
+    background-color: #fff;
+    background-image: url(../img/white-bg.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    box-shadow: 10px 15px 70px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    padding: 1.5rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+        left: -120px;
+        top: -80px;
+        width: 100%;
+        max-width: 240px;
+        height: 100%;
+        background-image: url(../img/circle-full-collor.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+        right: -70px;
+        top: 20px;
+        width: 100%;
+        max-width: 360px;
+        height: 145%;
+        background-image: url(../img/circle-with-opacity.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 36px;
+    }
+
+    &__text {
+        font-size: 1rem;
+        color: $sec-text;
+        margin-top: .5rem;
+    }
+}
+
+@media(max-width:768px) {
+    .advantages_bg_content {
+        margin-left: auto;
+        margin-right: auto;
+        &::before {
+            left: -10%;
+            max-width: 100px;
+            height: 100%;
+        }
+
+        &::after {
+            right: -10%;
+            max-width: 200px;
+        }
+    }
+}
+
+@media(max-width:620px) {
+    .advantages-bg {
+        margin-top: -100px;
+    }
+    .advantages_bg_content {
+        margin-top: 40vh;
+        
+        &::before {
+            left: -10px;
+        }
+
+        &::after {
+            right: -10px;
+        }
     }
 }

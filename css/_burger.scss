@@ -31,7 +31,8 @@
     }
 
     &__menu {
-        flex-basis: 65%;
+        width: 100%;
+        flex-basis: 50%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -42,9 +43,12 @@
         justify-content: space-between;
         align-items: center;
         flex-basis: 100%;
+
     }
 
     &__link {
+        height: 100%;
+        width: 100%;
         font-size: 14px;
         color: $sec-text;
         font-weight: 500;
@@ -55,6 +59,12 @@
         &:hover {
             cursor: pointer;
 
+        }
+
+        span {
+            display: block;
+            height: 60px;
+            line-height: 60px;
         }
 
     }
@@ -77,10 +87,15 @@
 
 
 .login-icon {
-    margin-left: 50px;
-    margin-bottom: -7.5px;
+    margin-left: 20px;
 }
 
+
+@media(max-width:1024px) {
+    .header__menu {
+        flex-basis: 75%;
+    }
+}
 
 
 @media (max-width: 767px) {
@@ -110,6 +125,14 @@
         }
     }
 
+
+    .header__link {
+        span {
+            height: 100%;
+            padding-bottom: 1rem;
+            line-height: 1;
+        }
+    }
 
 
 

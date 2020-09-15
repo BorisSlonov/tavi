@@ -10,7 +10,6 @@ body {
     width: 100%;
     max-width: 2560px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 .container {
@@ -46,10 +45,3 @@ body {
     }
 }
 
-@media(min-width:2480px) {
-
-    html,
-    body {
-        font-size: 20px;
-    }
-}
