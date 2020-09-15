@@ -49,6 +49,10 @@ body {
   padding: 0 15px;
 }
 
+a {
+  color: #535353;
+}
+
 @media (max-width: 768px) {
   html,
   body {
