@@ -18,20 +18,25 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 
-$(document).ready(function () { 
+$(document).ready(function () {
     $('.dr-slider').slick({
         slidesToShow: 2,
         appendArrows: '.page-dr-slider__controlls',
         responsive: [
-   
-    {
-      breakpoint: 570,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
- 
-  ]
+
+            {
+                breakpoint: 570,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
     });
- });
+
+    $('.bag-slider').slick({
+        slidesToShow: 1,
+        appendArrows: '.bag-slider-controlls'
+    })
+});

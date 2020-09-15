@@ -1,0 +1,43 @@
+.page-careful {
+    background-image: url(../img/careful-bg.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 2rem 0;
+    margin-top: -200px;
+    
+}
+
+.careful {
+    display: flex;
+    align-items: center;
+    &__item {
+        flex-basis: 50%;
+        min-width: 0;
+    }
+}
+
+.bag-slider {
+    overflow: hidden;
+    min-width: 0;
+    display: flex;
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+  
+
+    &__item:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+.bag-slider-controlls {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
