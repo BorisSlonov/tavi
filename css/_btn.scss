@@ -1,4 +1,6 @@
 .main-btn {
+    position: relative;
+    z-index: 2;
     width: 100%;
     max-width: 290px;
     border-radius: 35px;
@@ -15,6 +17,18 @@
         &:hover {
             background-color: #fff;
             color: #0A0A0A;
+            border: 1px solid #0A0A0A;
+        }
+    }
+
+    &_white {
+        background-color: #fff;
+        color: #0A0A0A;
+        border: 1px solid #0A0A0A;
+        transition: all .3s;
+        &:hover {
+            background-color: #0A0A0A;
+            color: #fff;
             border: 1px solid #0A0A0A;
         }
     }

@@ -42,3 +42,49 @@
 }
 
 
+
+
+.list_and_offer {
+
+    &__head {
+        @include text-gredient;
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: .06rem;
+    }
+
+    &__head_span {
+        display: block;
+        text-transform: uppercase;
+        font-size: calc(1.5rem + 50%);
+        font-weight: 500;
+    }
+
+    &__icon {
+        position: relative;
+    }
+
+    &__head_lc {
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        margin-top: 1rem;
+    }
+
+    &__li {
+        display: flex;
+        align-items: center;
+    }
+
+    &__li:not(:first-child) {
+        margin-top: .75rem;
+    }
+
+    &__text {
+        margin-left: .5rem;
+        font-size: 1rem;
+
+    }
+}
