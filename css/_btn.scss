@@ -33,6 +33,18 @@
         }
     }
 
+    &_gradient {
+        @include text-gredient;
+        border: 1px solid #FF80A4;
+        transition: all .3s;
+
+        &:hover {
+            box-shadow: 0 0 8px 1px #ff80a48a;
+            transform: translateY(-2px);
+            color: #fff;
+        }
+    }
+
     &_list {
         margin-top: 1.5rem;
     }

@@ -1,0 +1,33 @@
+.page-courses {
+    padding: 3rem 0;
+
+    &__title {
+        font-size: 3.5rem;
+    }
+
+    &__sub-title {
+        display: inline-block;
+        font-size: 1.8rem;
+        font-weight: 500;
+        transform: translateY(-15px);
+    }
+}
+
+
+
+.courses {
+    margin-top: 2rem;
+    &__item {
+        display: flex;
+        box-shadow: 0 0 26px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &__item:not(:first-child) {
+        margin-top: 2rem;
+    }
+
+    .list_and_offer {
+        padding: 3rem 2rem;
+    }
+      
+}

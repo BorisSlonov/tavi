@@ -34,6 +34,7 @@ body {
   height: 100%;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
+  color: #535353;
 }
 
 .container-fluid {
@@ -357,6 +358,22 @@ body {
   font-size: 1rem;
 }
 
+.list_and_offer__course-title {
+  font-weight: 400;
+  color: #535353;
+}
+
+.list_and_offer__course-title1 {
+  position: relative;
+}
+
+.list_and_offer__course-title1:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .main-btn {
   position: relative;
   z-index: 2;
@@ -395,6 +412,23 @@ body {
   background-color: #0A0A0A;
   color: #fff;
   border: 1px solid #0A0A0A;
+}
+
+.main-btn_gradient {
+  background: -webkit-linear-gradient(49.14deg, #FF80A4 18.25%, #FFA984 78.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid #FF80A4;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.main-btn_gradient:hover {
+  -webkit-box-shadow: 0 0 8px 1px #ff80a48a;
+          box-shadow: 0 0 8px 1px #ff80a48a;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  color: #fff;
 }
 
 .main-btn_list {
@@ -1459,5 +1493,122 @@ body {
   .page-careful:before {
     top: -15%;
   }
+}
+
+.page-courses {
+  padding: 3rem 0;
+}
+
+.page-courses__title {
+  font-size: 3.5rem;
+}
+
+.page-courses__sub-title {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.courses {
+  margin-top: 2rem;
+}
+
+.courses__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 0 26px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 26px 0 rgba(0, 0, 0, 0.1);
+}
+
+.courses__item:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.courses .list_and_offer {
+  padding: 3rem 2rem;
+}
+
+.page-last-promo {
+  background-image: url(../img/last-promo-bg.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  padding: 5rem 0;
+}
+
+.last-promo {
+  width: 100%;
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+}
+
+.last-promo__span {
+  font-size: 24px;
+}
+
+.last-promo .main-btn {
+  margin-top: 1rem;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 0 1rem 0;
+}
+
+.footer__item {
+  margin: 1rem;
+}
+
+.footer .main-btn {
+  margin-top: 1rem;
+}
+
+.footer__li:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.footer__social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__social-container a:not(:first-child) {
+  margin-left: 15px;
+}
+
+.sub-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.sub-footer a {
+  color: #535353;
 }
 /*# sourceMappingURL=style.css.map */
