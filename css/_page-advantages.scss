@@ -1,0 +1,84 @@
+.tavi_this {
+    max-width: 330px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.advantages {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2rem;
+
+
+    &__row {
+        display: flex;
+    }
+
+    &__item:not(:first-child) {
+        margin-left: 4rem;
+    }
+
+    &__row:not(:first-child) {
+        margin-left: 4rem;
+    }
+
+    &__num {
+        font-size: 32px;
+    }
+
+    &__num-span {
+        display: block;
+        margin-top: -15px;
+    }
+}
+
+.plus {
+    max-height: 128px;
+    margin-top: -10px;
+
+    &__span {
+        display: block;
+        margin-top: -35px;
+        font-size: 32px;
+    }
+}
+
+@media(max-width:950px) {
+    .advantages {
+        flex-direction: column;
+        align-items: center;
+
+        &__row {
+            justify-content: space-around;
+            width: 100%;
+        }
+
+
+        &__item:not(:first-child) {
+            margin-left: 0;
+        }
+
+        &__row:not(:first-child) {
+            margin-left: 0;
+        }
+    }
+}
+
+@media(max-width:400px) {
+    .advantages {
+
+        &__row {
+            justify-content: space-between;
+        }
+        
+        &__num {
+            font-size: 18px;
+
+        }
+
+    }
+
+    .plus__span {
+        font-size: 18px;
+    }
+}

@@ -1,4 +1,24 @@
-.btn-callback {
-    color: #000;
-    background-color: transperent;
+.main-btn {
+    width: 100%;
+    max-width: 330px;
+    border-radius: 35px;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &_black {
+        background-color: #0A0A0A;
+        color: #fff;
+        border: 1px solid transparent;
+        transition: all .3s;
+        &:hover {
+            background-color: #fff;
+            color: #0A0A0A;
+            border: 1px solid #0A0A0A;
+        }
+    }
+
+    &_list {
+        margin-top: 1.5rem;
+    }
 }

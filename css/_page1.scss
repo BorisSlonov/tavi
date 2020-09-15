@@ -1,0 +1,50 @@
+.page1 {
+    background-image: url(../img/page1_bg.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    border-top: 1px solid transparent;
+    padding-bottom: 3rem;
+}
+
+.list_and_offer {
+
+    &__head {
+        @include text-gredient;
+        max-width: 360px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: .06rem;
+    }
+    &__head_span {
+        display: block;
+        text-transform: uppercase;
+        font-size: calc(1rem + 50%);
+        font-weight: 500;
+    }
+    &__list {
+        margin-top: 1rem;
+    }
+
+    &__li {
+        display: flex;
+        align-items: center;
+    }
+
+    &__li:not(:first-child) {
+        margin-top: .75rem;
+    }
+
+    &__text {
+        margin-left: .5rem;
+        font-size: 1rem;
+
+    }
+}
+
+.list_and_offer_page1 {
+    margin-top: 9rem;
+    background-color: #fff;
+    box-shadow: 10px 15px 70px rgba(0, 0, 0, 0.1);
+    max-width: 520px;
+    padding: 1.5rem;
+}

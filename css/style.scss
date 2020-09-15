@@ -1,5 +1,5 @@
 //burger-layout
-@import 'var';
+@import 'var-mixin';
 @import 'reset';
 @import 'layout';
 @import 'burger';
@@ -8,3 +8,8 @@
 @import 'all';
 @import 'btn';
 @import 'popups';
+
+
+@import 'page1';
+
+@import 'page-advantages';

@@ -1,0 +1,12 @@
+$sec-text: #535353;
+
+
+@mixin text-gredient{
+    background: -webkit-linear-gradient(49.14deg, #FF80A4 18.25%, #FFA984 78.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient {
+    @include text-gredient;
+}

@@ -5,21 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Title</title>
 </head>
 
 <body>
-    <div class="wrapper">
+
+    <div class="page1 container-fluid">
         <!-- burger -->
-        <div class="header lock-padding">
+
+        <header class="header">
             <div class="container">
                 <div class='header__body'>
                     <!-- logo -->
                     <a href="#" class='header__logo'>
-                        <img class='logo-img' src='img/logo.png' alt='Logo'>
+                        <img class="header__logo-img" src="img/text-svg/logo.svg" alt="">
                     </a>
                     <!-- burger -->
                     <div class='header__burger'>
@@ -29,36 +31,132 @@
                     </div>
                     <!-- navigation -->
                     <nav class='header__menu'>
+                        <!-- header__list -->
                         <ul class='header__list'>
-                            <li class=''><a href='#popup' class='header__link popup-link'>Попап</a></li>
-                            <li class=''><a href='#works' class='header__link'>Кулеры и аксессуары</a></li>
-                            <li class=''><a href='#team' class='header__link'>Акции</a></li>
-                            <li class=''><a href='#test' class='header__link'>Сертификаты</a></li>
-                            <li>
-                                <!-- time -->
-                                <div class="header__time">
-                                    <span class="bold">10:00 - 22:00</span>
-                                    <span>Без выходных</span>
-                                </div>
-                                <!-- time -->
+                            <li class=''><a href='#' class='header__link popup-link'><span
+                                        class="link-hover">Попап</span></a></li>
+                            <li class=''><a href='#' class='header__link'><span class="link-hover">курсы</span></a></li>
+                            <li class=''><a href='#' class='header__link'><span class="link-hover">сумка в
+                                        роддом</span></a></li>
+                            <li class=''><a href='#' class='header__link'><span class="link-hover">статьи</span></a>
                             </li>
-                            <li>
-                                <div class="header__callback">
-                                    <span>8 999 300 66 12</span>
-                                    <button class="btn-call">
-                                        <span class="link-hover bold">Заказать звонок</span>
-                                    </button>
-                                </div>
+                            <li class=''><a href='#' class='header__link'><span class="link-hover">вебинары</span></a>
                             </li>
                         </ul>
+                        <!-- header__list -->
+                        <a href="#">
+                            <img class="login-icon" src="img/icon/login.svg" alt="">
+                        </a>
                     </nav>
                     <!-- navigation -->
                 </div>
             </div>
-        </div>
-        <!-- burger -->
-    </div>
+        </header>
 
+        <!-- burger -->
+
+        <div class="container">
+            <section class="list_and_offer list_and_offer_page1">
+                <h1 class="list_and_offer__head">Mы собрали за вас <span class="list_and_offer__head_span">сумку в
+                        роддом</span></h1>
+
+                <ul class="list_and_offer__list">
+                    <li class="list_and_offer__li">
+                        <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
+                        <span class="list_and_offer__text">Для себя, для малыша или для обоих сразу</span>
+                    </li>
+                    <li class="list_and_offer__li">
+                        <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
+                        <span class="list_and_offer__text">Только проверенные средства</span>
+                    </li>
+                    <li class="list_and_offer__li">
+                        <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
+                        <span class="list_and_offer__text">Всё необходимое для родов и выписки</span>
+                    </li>
+
+                </ul>
+
+                <button class="main-btn main-btn_black main-btn_list">
+                    выбрать свою сумку
+                </button>
+
+            </section>
+        </div>
+
+    </div>
+    <!-- page1  -->
+
+
+
+    <!-- page-advantages -->
+    <div class="page-advantages">
+        <!-- h2-container -->
+        <div class="h2-container tavi_this">
+            <h2 hidden>TAVI это:</h2>
+            <img src="img/text-svg/tavi-this.svg" alt="">
+        </div>
+        <!-- h2-container -->
+        <div class="container">
+            <div class="advantages">
+
+                <div class="advantages__row">
+                    <!-- item -->
+                    <div class="advantages__item">
+                        <!-- img -->
+                        <h3 class="advantages__num text-gradient">
+                            <img src="img/text-svg/3.svg" alt=""> <br>
+                            <span class="advantages__num-span">курса</span>
+                        </h3>
+                        <span>для каждого периода <br>
+                            жизни мамы</span>
+                    </div>
+                    <!-- item -->
+                    <div class="advantages__item">
+                        <!-- img -->
+
+                        <h3 class="advantages__num text-gradient">
+                            <img src="img/text-svg/100.svg" alt=""> <br>
+                            <span class="advantages__num-span">статей</span>
+                        </h3>
+                        <span>полное руководство <br>
+                            для родителей</span>
+                    </div>
+                    <!-- item -->
+                </div>
+                <!-- row -->
+
+                <div class="advantages__row">
+                    <div class="advantages__item">
+                        <!-- img -->
+
+                        <h3 class="advantages__num text-gradient">
+                            <img src="img/text-svg/50.svg" alt=""> <br>
+                            <span class="advantages__num-span">экспертов</ы>
+                        </h3>
+                        <span>из лучших клиник <br>
+                            Москвы</span>
+                    </div>
+                    <!-- item -->
+                    <div class="advantages__item">
+                        <!-- img -->
+                        <h3 class="text-gradient">
+                            <img class="plus" src="img/text-svg/plus.svg" alt=""> <br>
+                            <span class="plus__span">
+                                сумка <br>
+                                в роддом
+                            </span>
+                        </h3>
+
+                    </div>
+                    <!-- item -->
+                </div>
+            </div>
+            <!-- container -->
+        </div>
+        <!-- advantages -->
+
+    </div>
+    <!-- page-advantages -->
 
 
 
@@ -98,6 +196,28 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+    <!-- SVG-sprite  -->
+    <div style="display: none;">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+
+
+
+
+        </svg>
+    </div>
+    <!-- SVG-sprite  -->
+
+
+
+
 
     <!-- POPUP -->
 
