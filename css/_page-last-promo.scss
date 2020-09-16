@@ -3,6 +3,7 @@
     background-position: 50% 50%;
     background-size: cover;
     padding: 5rem 0;
+    margin-top: 2rem;
 
 }
 
@@ -18,5 +19,39 @@
     }
     .main-btn {
         margin-top: 1rem;
+    }
+
+
+    &__btn-container {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 1rem;
+    }
+
+
+    &__cost-container {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    &__cost-old {
+        position: relative;
+
+        &::after {
+            content:'';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 1px;
+            background-color: $sec-text;
+        }
+    }
+
+    &__cost-new {
+        font-weight: 700;
+        color: #000;
+        font-size: 2.6rem;
     }
 }

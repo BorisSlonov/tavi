@@ -58,6 +58,24 @@
 }
 
 .list_and_offer__lc {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+        width: 2px;
+        top: 0;
+        bottom: 0;
+        left: 14px;
+        transform: translateX(-50%);
+        height: 95%;
+        width: 2px;
+        background-repeat: repeat-y;
+        background-image: url(../img/dashed-border.svg);
+        background-position: 50% 50%;
+        background-size: contain;
+    }
     li:not(:first-child) {
         margin-top: 2rem;
 
@@ -71,21 +89,21 @@
 .list_and_offer__check-container {
     position: relative;
 
-    &:before {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        overflow: hidden;
-        width: 2px;
-        top: -170%;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 4rem;
-        background-image: url(../img/dashed-border.svg);
-        background-position: 50% 50%;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
+    // &:before {
+    //     content: '';
+    //     position: absolute;
+    //     z-index: -1;
+    //     overflow: hidden;
+    //     width: 2px;
+    //     top: -170%;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     height: 4rem;
+    //     background-image: url(../img/dashed-border.svg);
+    //     background-position: 50% 50%;
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    // }
 }
 
 .list_and_offer__li:first-child {

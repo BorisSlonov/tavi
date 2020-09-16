@@ -4,11 +4,25 @@
     justify-content: space-between;
     padding: 3rem 0 1rem 0;
 
+    a {
+        color: $sec-text;
+    }
     &__item {
         margin: 1rem;
     }
     .main-btn {
         margin-top: 1rem;
+    }
+
+    &__li:first-child {
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+        margin-top: 0;
+        a {
+            margin-left: 0.5rem;
+            display: inline-block;
+        }
     }
 
     &__li:not(:first-child) {
@@ -17,6 +31,7 @@
 
     &__social-container {
         display: flex;
+        margin: 1rem;
         align-items: flex-start;
         a:not(:first-child) {
             margin-left: 15px;
@@ -30,13 +45,17 @@
     justify-content: space-between;
     padding-bottom: 2rem;
     a {
+        display: inline-block;
         color: $sec-text;
-    }
-
-    a:not(:first-child) {
+        margin-top: .75rem;
         margin-left: .25rem;
+
+    }
+    &>span {
+        display: inline-block;
         margin-top: .75rem;
     }
+
 }
 
 @media(max-width:550px) {
