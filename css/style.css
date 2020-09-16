@@ -889,6 +889,8 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 0;
+  width: 100% !important;
+  max-width: 100%;
 }
 
 .how-work__text-container {
@@ -1565,7 +1567,7 @@ body {
 }
 
 .courses {
-  margin-top: 2rem;
+  margin-top: -2rem;
 }
 
 .courses__item {
@@ -2011,8 +2013,15 @@ body {
   background-image: url(../img/bag-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center -250px;
-  padding-top: 10rem;
+  background-position: right -250px;
+  padding-top: 15rem;
+}
+
+@media (max-width: 1200px) {
+  .page_courses_list_bg {
+    background-size: contain;
+    background-position: center top;
+  }
 }
 
 .page-courses-choise {
@@ -2033,6 +2042,10 @@ body {
   margin-bottom: -50px;
 }
 
+.courses_choise img {
+  width: 100%;
+}
+
 .courses_choise__item {
   width: 100%;
   position: relative;
@@ -2048,5 +2061,36 @@ body {
 .courses_choise__title {
   font-size: 60px;
   font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .courses_choise {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .courses_choise__courses_list {
+    margin-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .courses_choise {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .courses_choise__courses_list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 320px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
