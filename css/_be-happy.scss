@@ -1,0 +1,41 @@
+.page-be-happy {
+    position: relative;
+    background-image: url(../img/last-page-bg.png);
+    background-position: bottom left;
+    background-size: cover;
+    height: 100%;
+    padding: 5rem 0 16rem;
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        left: -200px;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        background-image: url(../img/last-page-mom.jpg);
+    }
+}
+
+.be-happy {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border-top: 1px solid transparent;
+
+    &__content {
+        transform: translateY(5rem);
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &__img {
+        margin-top: 1rem;
+    }
+}
