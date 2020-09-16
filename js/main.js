@@ -1,3 +1,5 @@
+"use strict"
+
 //burger
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.header__list'),
@@ -17,8 +19,17 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
+content.style.display = "none"
+})
+
+
 
 $(document).ready(function () {
+
+
+
+
+
     $('.dr-slider').slick({
         slidesToShow: 2,
         appendArrows: '.page-dr-slider__controlls',
@@ -39,6 +50,13 @@ $(document).ready(function () {
         slidesToShow: 1,
         appendArrows: '.bag-slider-controlls'
     })
+
+
+
+
+	$('.open_bag_list').click(function () { 
+        $('.list_and_offer__list')removeClass('list_hidden')
+     })
 
    
 });

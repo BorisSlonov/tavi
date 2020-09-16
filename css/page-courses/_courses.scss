@@ -1,0 +1,54 @@
+.page_course_bg {
+    background-image: url(../../img/page-courses-bg.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.page_courses {
+    display: flex;
+
+}
+
+.page_courses_1bg {
+    margin-top: 5%;
+    background-color: #fff;
+    padding: 1rem 1rem 2rem;
+}
+
+.page_courses_list_bg {
+    position: relative;
+    background-image: url(../img/bag-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center -250px;
+    padding-top: 10rem;
+}
+
+
+// courses_choise
+.page-courses-choise {
+    margin-top: 3.5rem;
+}
+.courses_choise {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: -50px;
+
+    &__item {
+        width: 100%;
+        position: relative;
+        flex-basis: 400%;
+        z-index: -1;
+    }
+
+    &__courses_list {
+        margin-left: -20px;
+    }
+
+    &__title {
+        font-size: 60px;
+        font-weight: 700;
+    }
+}

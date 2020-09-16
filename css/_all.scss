@@ -63,6 +63,13 @@
         text-transform: uppercase;
         font-size: 36px;
     }
+
+    &__page-bag {
+        @include text-gredient;
+        font-weight: 400;
+        font-size: 36px;
+        margin-top: 5rem;
+    }
 }
 
 

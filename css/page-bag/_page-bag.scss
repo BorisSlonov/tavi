@@ -1,0 +1,130 @@
+.page_bag_bg {
+    background-image: url(../img/bag-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -120px;
+    padding: 10rem 0 10rem;
+
+}
+
+.page_bg_1_screen {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+
+    &__img {
+        width: 100%;
+        max-width: 400px;
+        margin-left: 1rem;
+    }
+}
+
+@media(max-width:768px) {
+    .icon_in_page_bg {
+        flex-direction: column;
+    }
+
+    .page_bg_1_screen {
+        flex-direction: column;
+        align-items: center;
+
+        &__img {
+            margin-left: 0;
+        }
+
+        &__img-container {
+            margin-top: -10px;
+        }
+    }
+
+
+}
+
+
+//bag-list
+
+
+.bag-list {
+    &__item:not(:first-child) {
+        margin-top: 3rem;
+    }
+}
+
+.product-bag {
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 15px 70px rgba(0, 0, 0, 0.1);
+    padding: 2rem 3rem;
+
+    &__content {
+        margin-left: 2rem;
+        flex-basis: 70%;
+    }
+
+    &__title {
+        @include text-gredient;
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    &__sub-title {
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin-top: .5rem;
+    }
+
+    &__descr {
+        margin-top: 2rem;
+    }
+
+    &__img-div {
+        img {
+            object-fit: contain;
+            max-width: 300px;
+            margin: 1rem;
+            width: 100%;
+        }
+    }
+
+    .main-btn {
+        margin-top: 3rem;
+    }
+
+    .bag-cost {
+        font-size: 1.25rem;
+        margin-left: 1rem;
+        text-align: center;
+    }
+
+    .open_bag_list {
+        margin-top: 1.5rem;
+    }
+}
+
+
+
+@media(max-width:900px) {
+    .product-bag {
+        flex-direction: column-reverse;
+        &__content {
+            flex-basis: 100%;
+        }
+    }
+}
+
+@media(max-width:500px) {
+
+    &__img-div {
+        img {
+            margin: 0.25rem;
+       
+        }
+    }
+}
+
+.list_hidden {
+    display: none;
+}
+
+//tabs
