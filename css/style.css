@@ -370,8 +370,42 @@ body {
 .list_and_offer__course-title1:before {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 60px;
+  background-image: url(../img/text-svg/1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: -3.25rem;
+}
+
+.list_and_offer__course-title2 {
+  position: relative;
+}
+
+.list_and_offer__course-title2:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 70px;
+  background-image: url(../img/text-svg/2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: -3.75rem;
+}
+
+.list_and_offer__course-title3 {
+  position: relative;
+}
+
+.list_and_offer__course-title3:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 70px;
+  background-image: url(../img/text-svg/3-num-course.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: -3.75rem;
 }
 
 .main-btn {
