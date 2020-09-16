@@ -1680,6 +1680,8 @@ body {
   right: 0;
   top: 0;
   background-image: url(../img/last-page-mom.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .be-happy {
@@ -1709,6 +1711,13 @@ body {
 
 .be-happy__img {
   margin-top: 1rem;
+  width: 100%;
+}
+
+@media (max-width: 1120px) {
+  .page-be-happy::after {
+    display: none;
+  }
 }
 
 .footer {
