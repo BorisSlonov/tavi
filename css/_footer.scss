@@ -32,4 +32,15 @@
     a {
         color: $sec-text;
     }
+
+    a:not(:first-child) {
+        margin-left: .25rem;
+        margin-top: .75rem;
+    }
+}
+
+@media(max-width:550px) {
+    .sub-footer {
+        justify-content: center;
+    }
 }

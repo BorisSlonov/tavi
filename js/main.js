@@ -39,4 +39,6 @@ $(document).ready(function () {
         slidesToShow: 1,
         appendArrows: '.bag-slider-controlls'
     })
+
+   
 });
