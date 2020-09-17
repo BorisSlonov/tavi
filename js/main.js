@@ -19,8 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-content.style.display = "none"
-})
 
 
 
@@ -28,9 +26,7 @@ $(document).ready(function () {
 
 
 
-
-
-    $('.dr-slider').slick({
+      $('.dr-slider').slick({
         slidesToShow: 2,
         appendArrows: '.page-dr-slider__controlls',
         responsive: [
@@ -53,10 +49,44 @@ $(document).ready(function () {
 
 
 
+  //spoiler
+ // АККОРДЕОН
+$(function() {
+	
+	$('.tabs').each(function(){
+		var wrap = this;
+		// открывать при загрузке активный слайд		
+		if($(wrap).hasClass('active')) {
+			$(this).find('.tab-content').slideDown();
+		}
+		// заголовок-кнопка		
+		var title = $(wrap).find('.tab-item');
+		
+		// функционал при клике на кнопку
+		$(title).on('click', function(){
+			var wrap = $(this).parents(".tab-item");
+			var content = $(wrap).find('.tab-content');
+			
+			if($(wrap).hasClass("active")) {
+				$(wrap).removeClass("active");
+				$(content).slideUp();
+			} else {
+				$(wrap).addClass("active");
+				$(content).slideDown();
+				$(wrap).siblings().removeClass('active');
+				$(wrap).siblings().find('.tab-content').slideUp();
+			}
+			
+		})
+		
+	})
+	
 
-	$('.open_bag_list').click(function () { 
-        $('.list_and_offer__list')removeClass('list_hidden')
-     })
+	
+})
 
-   
+
+
 });
+
+

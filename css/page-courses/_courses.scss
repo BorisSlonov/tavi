@@ -1,5 +1,5 @@
 .page_course_bg {
-    background-image: url(../../img/page-courses-bg.jpg);
+    background-image: url(../img/page-courses-bg.jpg);
     background-size: cover;
     background-position: 50% 50%;
     padding-top: 5rem;
@@ -36,6 +36,14 @@
 // courses_choise
 .page-courses-choise {
     margin-top: 3.5rem;
+
+    &__page-single {
+        margin-top: -50px;
+        padding-bottom: 5rem;
+        .courses_choise__courses_list {
+            transform: 0;
+        }
+    }
 }
 .courses_choise {
     position: relative;
@@ -43,6 +51,9 @@
     justify-content: flex-start;
     align-items: center;
     margin-bottom: -50px;
+    &__page-single {
+        justify-content: flex-start;
+    }
 
     img {
         width: 100%;
@@ -51,7 +62,6 @@
     &__item {
         width: 100%;
         position: relative;
-        flex-basis: 400%;
         z-index: -1;
     }
 
