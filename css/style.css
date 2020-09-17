@@ -1994,6 +1994,8 @@ body {
   background-image: url(../../img/page-courses-bg.jpg);
   background-size: cover;
   background-position: 50% 50%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .page_courses {
@@ -2055,7 +2057,8 @@ body {
 }
 
 .courses_choise__courses_list {
-  margin-left: -20px;
+  -webkit-transform: translateX(-95px);
+          transform: translateX(-95px);
 }
 
 .courses_choise__title {
@@ -2072,6 +2075,8 @@ body {
   }
   .courses_choise__courses_list {
     margin-left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
