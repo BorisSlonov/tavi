@@ -1,0 +1,120 @@
+.articles-filter-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__choose-category {
+        margin: 0.5rem;
+    }
+}
+
+.articles-filter {
+    width: 100%;
+    flex-basis: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.article {
+    display: flex;
+    flex-direction: column;
+    max-width: 373px;
+
+    &__title {
+        margin-top: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+
+    &__descr {
+        margin-top: .5rem;
+        font-size: 0.9rem;
+    }
+
+    &__btn {
+        margin-top: 1.25rem;
+    }
+}
+
+
+
+
+.block_fff_gradient_text {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    box-shadow: 10px 15px 70px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.list-with-tere {
+
+    &__li:not(:first-child) {
+        margin-top: 1rem;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+    }
+
+    &__tere {
+        width: 25px;
+        height: 2.5px;
+        background: -webkit-linear-gradient(49.14deg, #FF80A4 18.25%, #FFA984 78.46%);
+        margin-right: 0.5rem;
+    }
+
+    &__text {
+        margin-top: .5rem;
+        margin-left: calc(0.5rem + 25px);
+    }
+}
+
+.article_title_text {
+    &__title {
+        font-weight: 500;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+   
+
+    &__text:not(:first-child) {
+        margin-top: .5rem;
+    }
+}
+
+
+
+.list_with_li_icon {
+    &__content {
+        background-color: #fff;
+        padding: 2rem 2rem;
+        box-shadow: 10px 15px 70px rgba(0, 0, 0, 0.1);
+        max-width: 650px;
+    }
+
+    &__list {
+        margin-top: 1.5rem;
+    }
+    &__li {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__li:not(:first-child) {
+        margin-top: 1.5rem;
+    }
+    &__text {
+        margin-left: 1rem;
+    }
+    
+}
