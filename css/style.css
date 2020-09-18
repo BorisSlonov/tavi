@@ -792,6 +792,7 @@ body {
 
 .main-btn {
   position: relative;
+  display: inline-block;
   z-index: 2;
   width: 100%;
   max-width: 290px;
@@ -1577,8 +1578,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transform: translateX(60px);
-          transform: translateX(60px);
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
 }
 
 .page-dr-slider__controlls {
@@ -1612,7 +1613,6 @@ body {
   min-width: 0;
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
-  margin-left: -30px;
 }
 
 .dr-slider__slide {
@@ -1975,8 +1975,7 @@ body {
   display: inline-block;
   font-size: 1.8rem;
   font-weight: 500;
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
+  margin-bottom: 5rem;
 }
 
 .courses {
@@ -2014,6 +2013,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .courses .page-courses__sub-title {
+    margin-bottom: 3rem;
+  }
   .courses__img-container {
     display: none;
   }

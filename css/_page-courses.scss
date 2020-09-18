@@ -9,7 +9,7 @@
         display: inline-block;
         font-size: 1.8rem;
         font-weight: 500;
-        transform: translateY(-15px);
+        margin-bottom: 5rem;
     }
 }
 
@@ -51,6 +51,11 @@
 
 @media(max-width:768px) {
     .courses {
+        .page-courses {
+            &__sub-title {
+                margin-bottom: 3rem;
+            }
+        }
         &__img-container {
             display: none;
         }
