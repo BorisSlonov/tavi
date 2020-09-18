@@ -2813,6 +2813,10 @@ body {
   max-width: 650px;
 }
 
+.list_with_li_icon__title {
+  font-size: 2.25rem;
+}
+
 .list_with_li_icon__list {
   margin-top: 1.5rem;
 }
