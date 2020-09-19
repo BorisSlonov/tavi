@@ -8,882 +8,231 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Title</title>
+
+    <style>
+        .page_article_wrap {
+            margin-top: 120px;
+        }
+
+        .page_article {
+            margin-top: 35px;
+        }
+
+        .article_container {}
+
+        .article_container__row {
+            flex-wrap: wrap;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .article_container__item {
+            flex-basis: calc(33.333% - 30px);
+            margin-top: 25px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .article_container__item img {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .main-btn_article {
+            max-width: 235px;
+        }
+
+        .how-work-list-fff-bg .how-work__item {
+            background-color: #fff;
+        }
+    </style>
+
+<!-- <ul class="how-work__item-list">
+    
+    На главной к этому списку надо добавить класс how-work-list-fff-bg
+
+
+-->
 </head>
 
 <body>
 
 
-        <!-- burger -->
+    <!-- burger -->
 
-        <header class="header">
-            <div class="container">
-                <div class='header__body'>
-                    <!-- logo -->
-                    <a href="#" class='header__logo'>
-                        <img class="header__logo-img" src="img/text-svg/logo.svg" alt="">
-                    </a>
-                    <!-- burger -->
-                    <div class='header__burger'>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <!-- navigation -->
-                    <nav class='header__menu'>
-                        <!-- header__list -->
-                        <ul class='header__list'>
-                            <li class=''><a href='page-courses.html' class='header__link'><span
-                                        class="link-hover">курсы</span></a></li>
-                            <li class=''><a href='page-bag.html' class='header__link'><span class="link-hover">сумка в
-                                        роддом</span></a></li>
-                            <li class=''><a href='#' class='header__link'><span class="link-hover">статьи</span></a>
-                            </li>
-                            <li class=''><a href='#' class='header__link'><span class="link-hover">вебинары</span></a>
-                            </li>
-                        </ul>
-                        <!-- header__list -->
-                        <a href="#">
-                            <img class="login-icon" src="img/icon/login.svg" alt="">
-                        </a>
-                    </nav>
-                    <!-- navigation -->
-                </div>
-            </div>
-        </header>
-        <div class="page1 container-fluid">
-        <!-- burger -->
-
+    <header class="header">
         <div class="container">
-            <section class="list_and_offer list_and_offer_page1">
-                <h1 class="list_and_offer__head">Mы собрали за вас <span class="list_and_offer__head_span">сумку в
-                        роддом</span></h1>
-
-                <ul class="list_and_offer__list">
-                    <li class="list_and_offer__li">
-                        <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                        <span class="list_and_offer__text">Для себя, для малыша или для обоих сразу</span>
-                    </li>
-                    <li class="list_and_offer__li">
-                        <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                        <span class="list_and_offer__text">Только проверенные средства</span>
-                    </li>
-                    <li class="list_and_offer__li">
-                        <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                        <span class="list_and_offer__text">Всё необходимое для родов и выписки</span>
-                    </li>
-
-                </ul>
-
-                <button class="main-btn main-btn_black main-btn_list">
-                    выбрать свою сумку
-                </button>
-
-            </section>
-        </div>
-
-    </div>
-    <!-- page1  -->
-
-
-
-    <!-- page-advantages -->
-    <div class="page-advantages">
-        <!-- h2-container -->
-        <div class="h2-container tavi_this">
-            <h2 hidden>TAVI это:</h2>
-            <img src="img/text-svg/tavi-this.svg" alt="">
-        </div>
-        <!-- h2-container -->
-        <div class="container">
-            <!-- advantages -->
-            <section class="advantages">
-
-                <div class="advantages__row">
-                    <!-- item -->
-                    <div class="advantages__item">
-                        <!-- img -->
-                        <h3 class="advantages__num text-gradient">
-                            <img src="img/text-svg/3.svg" alt=""> <br>
-                            <span class="advantages__num-span">курса</span>
-                        </h3>
-                        <span>для каждого периода <br>
-                            жизни мамы</span>
-                    </div>
-                    <!-- item -->
-                    <div class="advantages__item">
-                        <!-- img -->
-
-                        <h3 class="advantages__num text-gradient">
-                            <img src="img/text-svg/100.svg" alt=""> <br>
-                            <span class="advantages__num-span">статей</span>
-                        </h3>
-                        <span>полное руководство <br>
-                            для родителей</span>
-                    </div>
-                    <!-- item -->
+            <div class='header__body'>
+                <!-- logo -->
+                <a href="#" class='header__logo'>
+                    <img class="header__logo-img" src="img/text-svg/logo.svg" alt="">
+                </a>
+                <!-- burger -->
+                <div class='header__burger'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <!-- row -->
-
-                <div class="advantages__row">
-                    <div class="advantages__item">
-                        <!-- img -->
-
-                        <h3 class="advantages__num text-gradient">
-                            <img src="img/text-svg/50.svg" alt=""> <br>
-                            <span class="advantages__num-span">экспертов</ы>
-                        </h3>
-                        <span>из лучших клиник <br>
-                            Москвы</span>
-                    </div>
-                    <!-- item -->
-                    <div class="advantages__item">
-                        <!-- img -->
-                        <h3 class="text-gradient">
-                            <img class="plus" src="img/text-svg/plus.svg" alt=""> <br>
-                            <span class="plus__span">
-                                сумка <br>
-                                в роддом
-                            </span>
-                        </h3>
-
-                    </div>
-                    <!-- item -->
-                </div>
-                <!-- row -->
-            </section>
-            <!-- advantages -->
-        </div>
-        <!-- container -->
-
-
-
-
-
-        <!-- advantages-bg -->
-        <div class="container-fluid">
-            <div class="advantages-bg">
-                <!-- container -->
-                <div class="container">
-                    <div class="advantages_bg_content">
-                        <h2 class="advantages_bg_content__title text-gradient">С нами вы</h2>
-                        <p class="advantages_bg_content__text">
-                            станете самым крутым родителем, даже если никогда не видели ребенка вживую, научитесь всему
-                            у настоящих экспертов, будете кормить,
-                            мыть попку и учить математике. Даже как сделать
-                            ребенка расскажем.
-                        </p>
-                    </div>
-                </div>
-                <!-- container -->
-            </div>
-        </div>
-        <!-- advantages-bg -->
-
-
-
-
-        <!-- advantages-for-whom -->
-        <div class="advantages_for_whom_fluid">
-            <div class="container">
-                <div class="h2-container">
-                    <h2 class="h2-container__for-whom">Для кого школа?</h2>
-                </div>
-                <div class="advantages_for_whom">
-                    <!-- row -->
-                    <div class="advantages_for_whom__row">
-                        <!-- item -->
-                        <div class="advantages_for_whom__item">
-                            <!-- img -->
-                            <img class="advantages_for_whom__icon" src="img/icon/for-whom/for-pregant.svg"
-                                alt="иконка беременной">
-                            <!-- title -->
-                            <h3 class="advantages_for_whom__title">для беременных</h3>
-                            <!-- text -->
-                            <p class="advantages_for_whom__text">
-                                Разберем все аспекты мягких естественных родов
-                                и поможем подготовить
-                                к ним свое тело
-                            </p>
-                        </div>
-                        <!-- item -->
-                        <!-- item -->
-                        <div class="advantages_for_whom__item">
-                            <!-- img -->
-                            <img class="advantages_for_whom__icon" src="img/icon/for-whom/child-bottle.svg"
-                                alt="иконка беременной">
-                            <!-- title -->
-                            <h3 class="advantages_for_whom__title">для кормящих мам</h3>
-                            <!-- text -->
-                            <p class="advantages_for_whom__text">
-                                Избавим от страхов, связанных с грудным вскармливанием. Объясним, как справиться
-                                с трудностями и кормить правильно
-                            </p>
-                        </div>
-                        <!-- item -->
-                    </div>
-                    <!-- row -->
-                    <div class="advantages_for_whom__row">
-                        <!-- item -->
-                        <div class="advantages_for_whom__item">
-                            <!-- img -->
-                            <img class="advantages_for_whom__icon" src="img/icon/for-whom/hus_wife.svg"
-                                alt="иконка беременной">
-                            <!-- title -->
-                            <h3 class="advantages_for_whom__title">для пар, ожидающих первенца</h3>
-                            <!-- text -->
-                            <p class="advantages_for_whom__text">
-                                Обучим с нуля всему, что нужно знать о беременности, родах
-                                и воспитании ребенка
-                            </p>
-                        </div>
-                        <!-- item -->
-                        <!-- item -->
-                        <div class="advantages_for_whom__item">
-                            <!-- img -->
-                            <img class="advantages_for_whom__icon" src="img/icon/for-whom/family.svg"
-                                alt="иконка беременной">
-                            <!-- title -->
-                            <h3 class="advantages_for_whom__title">и просто родителей</h3>
-                            <!-- text -->
-                            <p class="advantages_for_whom__text">
-                                Расскажем то, что вы могли
-                                не знать, о воспитании и развитии вашего ребенка
-                            </p>
-                        </div>
-                        <!-- item -->
-                    </div>
-                    <!-- row -->
-                </div>
-            </div>
-        </div>
-
-        <!-- advantages-for-whom -->
-    </div>
-    <!-- page-advantages -->
-
-
-
-
-
-
-    <!-- page-how-work -->
-    <div class="container-fluid">
-        <section class="page-how-work">
-            <div class="container">
-                <!-- how-work -->
-                <div class="how-work">
-                    <!-- item-title -->
-                    <div class="how-work__item-title">
-                        <h2 class="how-work__title text-gradient">
-                            Как <br>
-                            работает <br>
-                            TAVI
-                        </h2>
-                    </div>
-                    <!-- item -->
-                    <!-- list -->
-                    <ul class="how-work__item-list">
-                        <li class="how-work__li">
-                            <!-- row -->
-                            <div class="how-work__row">
-                                <!-- item -->
-                                <a href="#" class="how-work__item">
-                                    <svg class="inline-svg-icon inline-svg-icon1">
-                                        <use xlink:href="#how_work1"></use>
-                                    </svg>
-                                    <span class="how-work__text">
-                                        Отслеживай <br>
-                                        состояние <br>
-                                        здоровья
-                                    </span>
-
-                                    <span class="how-work__link">
-
-                                    </span>
-                                </a>
-                                <!-- item -->
-                                <a href="#" class="how-work__item">
-                                    <svg class="inline-svg-icon">
-                                        <use xlink:href="#how_work2"></use>
-                                    </svg>
-                                    <span class="how-work__text">
-                                        Узнай, <br>
-                                        как протекает <br>
-                                        беременность
-                                    </span>
-
-
-                                    <span class="how-work__link">
-
-                                    </span>
-                                </a>
-                                <!-- item -->
-                            </div>
-                            <!-- row -->
+                <!-- navigation -->
+                <nav class='header__menu'>
+                    <!-- header__list -->
+                    <ul class='header__list'>
+                        <li class=''><a href='page-courses.html' class='header__link'><span
+                                    class="link-hover">курсы</span></a></li>
+                        <li class=''><a href='page-bag.html' class='header__link'><span class="link-hover">сумка в
+                                    роддом</span></a></li>
+                        <li class=''><a href='#' class='header__link'><span class="link-hover">статьи</span></a>
                         </li>
-                        <li class="how-work__li">
-                            <!-- row -->
-                            <div class="how-work__row how-work__row_mr1rem">
-                                <!-- item -->
-                                <a href="#" class="how-work__item">
-                                    <svg class="inline-svg-icon">
-                                        <use xlink:href="#how_work3"></use>
-                                    </svg>
-                                    <span class="how-work__text">
-                                        Легко и просто <br>
-                                        собери сумку <br>
-                                        в роддом
-                                    </span>
-
-
-                                    <span class="how-work__link">
-
-                                    </span>
-                                </a>
-                                <!-- item -->
-                                <a href="#" class="how-work__item">
-                                    <svg class="inline-svg-icon">
-                                        <use xlink:href="#how_work4"></use>
-                                    </svg>
-                                    <span class="how-work__text">
-                                        Воспитай <br>
-                                        нормального <br>
-                                        человека
-                                    </span>
-
-
-                                    <span class="how-work__link">
-
-                                    </span>
-                                </a>
-                                <!-- item -->
-                            </div>
-                            <!-- row -->
+                        <li class=''><a href='#' class='header__link'><span class="link-hover">вебинары</span></a>
                         </li>
                     </ul>
-                </div>
-                <!-- how-work -->
-            </div>
-        </section>
-    </div>
-
-    <!-- page-how-work -->
-
-
-
-    <!-- page-lc -->
-    <section class="page-lc">
-        <div class="container">
-            <!-- get-lc -->
-            <div class="get-lc">
-                <!-- item -->
-                <div class="get-lc__item">
-                    <div class="get-lc__table1-container">
-                        <img class="get-lc__table1" src="img/table1.svg" alt="">
-                    </div>
-                    <img class="get-lc__table2" src="img/table2.svg" alt="">
-                </div>
-                <!-- item -->
-                <div class="get-lc__item">
-                    <section class="list_and_offer">
-                        <h2 class="list_and_offer__head list_and_offer__head_lc">Личный кабинет</h2>
-
-                        <ul class="list_and_offer__list list_and_offer__lc">
-                            <li class="list_and_offer__li">
-                                <div class="list_and_offer__check-container"><img class="list_and_offer__icon"
-                                        src="img/icon/done.svg" alt=""></div>
-                                <span class="list_and_offer__text">Вноси результаты анализов в таблицу</span>
-                            </li>
-                            <li class="list_and_offer__li">
-                                <div class="list_and_offer__check-container"><img class="list_and_offer__icon"
-                                        src="img/icon/done.svg" alt=""></div>
-                                <span class="list_and_offer__text">Веди статистику, отслеживая показатели</span>
-                            </li>
-                            <li class="list_and_offer__li">
-                                <div class="list_and_offer__check-container"><img class="list_and_offer__icon"
-                                        src="img/icon/done.svg" alt=""></div>
-                                <span class="list_and_offer__text">Получай обратную связь от квалифицированных
-                                    специалистов</span>
-                            </li>
-                            <li class="list_and_offer__li">
-                                <div class="list_and_offer__check-container"><img class="list_and_offer__icon"
-                                        src="img/icon/done.svg" alt=""></div>
-                                <span class="list_and_offer__text">Закажи онлайн-консультацию нашего врача
-                                    из ведущей клиники Москвы</span>
-                            </li>
-
-                        </ul>
-
-                        <button class="main-btn main-btn_white main-btn_list">
-                            зарегистрироваться
-                        </button>
-
-                    </section>
-                </div>
-                <!-- item -->
-            </div>
-            <!-- get-lc -->
-        </div>
-    </section>
-    <!-- page-lc -->
-
-
-
-    <!-- dr-slider -->
-    <div class="container">
-        <div class="page-dr-slider">
-            <!-- btn-title-container -->
-            <div class="page-dr-slider__btn-title-container">
-                <!-- title -->
-                <div class="page-dr-slider__title-container">
-                    <h2 class="page-dr-slider__title text-gradient">
-                        Опыт <br>
-                        50 врачей
-                    </h2>
-                    <span class="page-dr-slider__sub-title">
-                        для рождения счастливого <br>
-                        и здорового ребенка
-                    </span>
-                </div>
-                <!-- title -->
-                <!-- controlls -->
-                <div class="page-dr-slider__controlls">
-
-                </div>
-                <!-- controlls -->
-            </div>
-            <!-- btn-title-container -->
-            <!-- slider -->
-            <div class="dr-slider">
-                <!-- slide -->
-                <div class="dr-slider__slide">
-                    <img src="img/dr-slider/doc1.png" alt="">
-                </div>
-                <!-- slide -->
-                <div class="dr-slider__slide">
-                    <img src="img/dr-slider/doc2.png" alt="">
-                </div>
-                <!-- slide -->
-                <div class=" dr-slider__slide">
-                    <img src="img/dr-slider/doc3.png" alt="">
-                </div>
-                <!-- slide -->
-                <div class="dr-slider__slide">
-                    <img src="img/dr-slider/doc1.png" alt="">
-                </div>
-                <!-- slide -->
-                <div class="dr-slider__slide">
-                    <img src="img/dr-slider/doc2.png" alt="">
-                </div>
-                <!-- slide -->
-                <div class=" dr-slider__slide">
-                    <img src="img/dr-slider/doc3.png" alt="">
-                </div>
-
+                    <!-- header__list -->
+                    <a href="#">
+                        <img class="login-icon" src="img/icon/login.svg" alt="">
+                    </a>
+                </nav>
+                <!-- navigation -->
             </div>
         </div>
-        <!-- dr-slider -->
-    </div>
-    <!-- container -->
+    </header>
+
+
+    <div class="page_article_wrap container">
 
 
 
-    <!-- page-doc-rate -->
-    <div class="container-fluid">
-        <div class="page-doc-rate">
-
-
-
-            <div class="container">
-                <div class="page-doc-rate__h3-container">
-                    <h3 class="page-doc-rate__title">Все наши врачи —</h3> <br>
-                    <span>специалисты из сертифицированных клиник Москвы</span>
-                </div>
-                <div class="clinic">
-
-                    <!-- row -->
-                    <div class="clinic__row">
-                        <!-- item -->
-                        <div class="clinic__item">
-                            <img class="clinic__img" src="img/clinics/clinic1.png" alt="">
-                            <h4 class="clinic__h4">AMED CLINIC</h4>
-                            <span class="clinic__sub-h4">Медицинский центр</span>
-                        </div>
-                        <!-- item -->
-                        <div class="clinic__item">
-                            <img class="clinic__img" src="img/clinics/clinic2.png" alt="">
-                            <h4 class="clinic__h4">проген</h4>
-                            <span class="clinic__sub-h4">Медико-генетический <br> центр</span>
-                        </div>
-                        <!-- item -->
-                    </div>
-                    <!-- row -->
-                    <div class="clinic__row">
-                        <!-- item -->
-                        <div class="clinic__item">
-                            <img class="clinic__img" src="img/clinics/clinic3.png" alt="">
-                            <h4 class="clinic__h4">Encanto</h4>
-                            <span class="clinic__sub-h4">Центр косметологии</span>
-                        </div>
-                        <!-- item -->
-                        <div class="clinic__item">
-                            <img class="clinic__img" src="img/clinics/clinic4.png" alt="">
-                            <h4 class="clinic__h4">Доктор Рядом</h4>
-                            <span class="clinic__sub-h4">Сеть медицинских <br> клиник</span>
-                        </div>
-                        <!-- item -->
-                    </div>
-                    <!-- row -->
-                </div>
-            </div>
+        <!-- filter -->
+        <div class="articles-filter-container">
+            <span class="articles-filter-container__choose-category">Выберите категорию</span>
+            <ul class="articles-filter">
+                <li>
+                    <button class="main-btn main-btn_art-filter">
+                        беременность
+                    </button>
+                </li>
+                <li>
+                    <button class="main-btn main-btn_art-filter">
+                        беременность
+                    </button>
+                </li>
+                <li>
+                    <button class="main-btn main-btn_art-filter">
+                        беременность
+                    </button>
+                </li>
+                <li>
+                    <button class="main-btn main-btn_art-filter">
+                        беременность
+                    </button>
+                </li>
+            </ul>
         </div>
-    </div>
-    <!-- page-doc-rate -->
+        <!-- filter -->
 
 
 
-
-    <!-- careful -->
-    <div class="container-fluid">
-        <div class="page-careful">
-            <div class="container">
-                <div class="careful">
-                    <div class="careful__item">
-                        <section class="list_and_offer">
-                            <img src="img/icon/heart.svg" alt="">
-                            <h1 class="list_and_offer__head">TAVI ЗАБОТИТСЯ О ВАС</h1>
-                            <span class="list_and_offer__descr">
-                                Мы собрали для вас сумку, чтобы вы ничего не забыли и не тратили драгоценное время на
-                                мониторинг бесконечных интернетиков
-                            </span>
-
-                            <ul class="list_and_offer__list">
-                                <li class="list_and_offer__li">
-                                    <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                    <span class="list_and_offer__text">Для себя, для малыша или для обоих сразу</span>
-                                </li>
-                                <li class="list_and_offer__li">
-                                    <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                    <span class="list_and_offer__text">Только проверенные средства</span>
-                                </li>
-                                <li class="list_and_offer__li">
-                                    <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                    <span class="list_and_offer__text">Всё необходимое для родов и выписки</span>
-                                </li>
-
-                            </ul>
-
-                            <button class="main-btn main-btn_black main-btn_list">
-                                выбрать свою сумку
+        <div class="page_article">
+            <div class="article_container">
+                <!-- row -->
+                <div class="article_container__row">
+                    <!-- item -->
+                    <div class="article_container__item">
+                        <!-- article -->
+                        <div class="article">
+                            <img class="article__img" src="img/article.jpg" alt="">
+                            <h3 class="article__title">подготовка к беременности</h3>
+                            <p class="article__descr">
+                                Какой должна быть подготовка к беременности, какие анализы нужно сдать будущей маме
+                                и будущему папе...
+                            </p>
+                            <button class="article__btn main-btn main-btn_article">
+                                читать статью
                             </button>
-
-                        </section>
+                        </div>
+                        <!-- article -->
                     </div>
                     <!-- item -->
-                    <div class="careful__item">
-                        <div class="bag-slider">
-                            <!-- item -->
-                            <div class="bag-slider__item">
-                                <img src="img/bag.png" alt="">
-                            </div>
-                            <!-- item -->
-                            <div class="bag-slider__item">
-                                <img src="img/bag.png" alt="">
-                            </div>
-                            <!-- item -->
-                            <div class="bag-slider__item">
-                                <img src="img/bag.png" alt="">
-                            </div>
-                            <!-- item -->
-                            <div class="bag-slider__item">
-                                <img src="img/bag.png" alt="">
-                            </div>
+                    <!-- item -->
+                    <div class="article_container__item">
+                        <!-- article -->
+                        <div class="article">
+                            <img class="article__img" src="img/article.jpg" alt="">
+                            <h3 class="article__title">подготовка к беременности</h3>
+                            <p class="article__descr">
+                                Какой должна быть подготовка к беременности, какие анализы нужно сдать будущей маме
+                                и будущему папе...
+                            </p>
+                            <button class="article__btn main-btn main-btn_article">
+                                читать статью
+                            </button>
                         </div>
-
-                        <div class="bag-slider-controlls">
-
-                        </div>
+                        <!-- article -->
                     </div>
                     <!-- item -->
-                </div>
-                <!-- careful -->
-            </div>
-            <!-- container -->
-        </div>
-        <!-- page-careful -->
-    </div>
-    <!-- careful -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- page-courses -->
-
-    <div class="page-courses">
-        <div class="container">
-            <div class="h2-container">
-                <h2 class="page-courses__title text-gradient">Свой курс</h2>
-                <span class="page-courses__sub-title text-gradient">для каждого периода жизни мамы</span>
-            </div>
-            <div class="courses">
-
-                <!-- item -->
-                <div class="courses__item  course-list-1">
-                    <!-- img -->
-                    <div class="courses__img-container">
-                        <img class="courses__img" src="img/courses/course1.jpg" alt="">
-                    </div>
-                    <!-- img -->
-
-                    <section class="list_and_offer">
-                        <h2 class="list_and_offer__course-title list_and_offer__course-title1">Беременность —
-                            полная подготовка к родам</h2>
-
-                        <ul class="list_and_offer__list">
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Как правильно спланировать беременность</span>
-                            </li>
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Какие анализы необходимо сдать перед зачатием</span>
-                            </li>
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Как избежать осложнений во время беременности</span>
-                            </li>
-
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Секс во время беременности: Вред или польза</span>
-                            </li>
-
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Уход за кожей: Как избежать растяжек</span>
-                            </li>
-
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Помощь психолога: Как избавиться от страха перед
-                                    родами</span>
-                            </li>
-
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Всё о родах: Как сделать роды комфортными и
-                                    безопасными</span>
-                            </li>
-
-                        </ul>
-
-                        <button class="main-btn main-btn_white main-btn_list">
-                            подробнее о курсе
-                        </button>
-
-                    </section>
-                </div>
-                <!-- item -->
-                <div class="courses__item  course-list-2">
-                    <!-- img -->
-                    <div class="courses__img-container">
-                        <img class="courses__img" src="img/courses/course2.jpg" alt="">
-                    </div>
-                    <!-- img -->
-
-                    <section class="list_and_offer">
-                        <h2 class="list_and_offer__course-title list_and_offer__course-title2">Восстановление после
-                            родов</h2>
-
-
-
-                        <ul class="list_and_offer__list">
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Как быстро вернуть форму после родов:
-                                    сделать живот плоским и избавиться от растяжек</span>
-                            </li>
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Как питаться для восстановления зубов, волос и
-                                    ногтей</span>
-                            </li>
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Как наладить гормональный фон после родов</span>
-                            </li>
-
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Советы психолога: Как справиться с послеродовой
-                                    депрессией</span>
-                            </li>
-
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Всё о сексе после родов:
-                                    Когда можно начинать и как правильно подготовиться</span>
-                            </li>
-
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Как вернуть упругость интимных мышц после
-                                    родов</span>
-                            </li>
-
-                        </ul>
-
-                        <button class="main-btn main-btn_white main-btn_list">
-                            подробнее о курсе
-                        </button>
-
-                    </section>
-                </div>
-                <!-- item -->
-                <div class="courses__item course-list-3">
-
-                    <!-- img -->
-                    <div class="courses__img-container">
-                        <img class="courses__img" src="img/courses/course3.jpg" alt="">
-                    </div>
-                    <!-- img -->
-
-                    <section class="list_and_offer">
-                        <h2 class="list_and_offer__course-title list_and_offer__course-title3">Первый год материнства
-                        </h2>
-
-
-                        <ul class="list_and_offer__list">
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Особенности ухода за малышом в первый месяц
-                                    материнства</span>
-                            </li>
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Учимся кормить грудью правильно</span>
-                            </li>
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Как питание мамы влияет на здоровье малыша
-                                    при грудном вскармливании</span>
-                            </li>
-
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Витамины для кормящих мам: вред или польза</span>
-                            </li>
-
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Учимся распознавать причины плача малыша</span>
-                            </li>
-
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Стоит ли ставить прививки в первый год жизни:
-                                    ответы врачей про вакцинацию</span>
-                            </li>
-
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Интеллектуальное и физическое развитие малыша до
-                                    года</span>
-                            </li>
-
-                            <li class="list_and_offer__li">
-                                <img class="list_and_offer__icon" src="img/icon/done.svg" alt="">
-                                <span class="list_and_offer__text">Учимся путешествовать с малышом безопасно</span>
-                            </li>
-
-                        </ul>
-
-                        <button class="main-btn main-btn_white main-btn_list">
-                            подробнее о курсе
-                        </button>
-
-                    </section>
-                </div>
-                <!-- item -->
-
-            </div>
-            <!-- courses -->
-        </div>
-        <!-- container -->
-    </div>
-
-    <!-- page-courses -->
-
-
-
-
-
-
-    <!-- page-last-promo -->
-
-    <div class="container-fluid">
-        <div class="page-last-promo">
-            <div class="container">
-                <div class="last-promo">
-                    <span class="last-promo__span"> Или купи доступ ко всем курсам <br>
-                        и просматривай их целый год!</span>
-
-
-                    <div class="last-promo__btn-container">
-                        <button class="main-btn main-btn_black">
-                            оформить подписку
-                        </button>
-                        <div class="last-promo__cost-container">
-                            <span class="last-promo__cost-old">3700 р</span> <br>
-                            <span class="last-promo__cost-new">2700 <br>Р</span>
+                    <div class="article_container__item">
+                        <!-- article -->
+                        <div class="article">
+                            <img class="article__img" src="img/article.jpg" alt="">
+                            <h3 class="article__title">подготовка к беременности</h3>
+                            <p class="article__descr">
+                                Какой должна быть подготовка к беременности, какие анализы нужно сдать будущей маме
+                                и будущему папе...
+                            </p>
+                            <button class="article__btn main-btn main-btn_article">
+                                читать статью
+                            </button>
                         </div>
+                        <!-- article -->
+                    </div>
+                    <!-- item -->
+                    <div class="article_container__item">
+                        <!-- article -->
+                        <div class="article">
+                            <img class="article__img" src="img/article.jpg" alt="">
+                            <h3 class="article__title">подготовка к беременности</h3>
+                            <p class="article__descr">
+                                Какой должна быть подготовка к беременности, какие анализы нужно сдать будущей маме
+                                и будущему папе...
+                            </p>
+                            <button class="article__btn main-btn main-btn_article">
+                                читать статью
+                            </button>
+                        </div>
+                        <!-- article -->
+                    </div>
+                    <!-- item -->
+                    <div class="article_container__item">
+                        <!-- article -->
+                        <div class="article">
+                            <img class="article__img" src="img/article.jpg" alt="">
+                            <h3 class="article__title">подготовка к беременности</h3>
+                            <p class="article__descr">
+                                Какой должна быть подготовка к беременности, какие анализы нужно сдать будущей маме
+                                и будущему папе...
+                            </p>
+                            <button class="article__btn main-btn main-btn_article">
+                                читать статью
+                            </button>
+                        </div>
+                        <!-- article -->
                     </div>
                 </div>
-
+                <!-- row -->
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
     </div>
-
-    <!-- page-last-promo -->
-
-
-
-
-
-    <!-- page-be-happy -->
-
-    <div class="container-fluid">
-        <section class="page-be-happy">
-            <div class="container">
-                <div class="be-happy">
-                    <div class="be-happy__content">
-                        <h2 class="be-happy__title text-gradient">станьте счастливыми <br> родителями</h2>
-                        <img class="be-happy__img" src="img/text-svg/with-tavi.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- page-be-happy -->
-
-
 
     <!-- footer -->
     <footer class="page-footer">
