@@ -142,8 +142,6 @@ sup {
    */
 img {
   border-style: none;
-  max-width: 100%;
-  object-fit: cover;
 }
 
 /* Forms
@@ -391,13 +389,6 @@ body {
 .container {
   width: 100%;
   max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.container-article {
-  width: 100%;
-  max-width: 900px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -750,8 +741,6 @@ body {
 }
 
 .list_and_offer__course-title {
-  position: relative;
-  z-index: 2;
   font-weight: 400;
   color: #535353;
 }
@@ -802,7 +791,6 @@ body {
 }
 
 .main-btn {
-  text-align: center;
   position: relative;
   display: inline-block;
   z-index: 2;
@@ -860,21 +848,6 @@ body {
   color: #fff;
 }
 
-@media(max-width:550px) {
-  .last-promo .main-btn {
-    max-width: 180px;
-  }
-  .product-bag .main-btn {
-    max-width: 130px;
-  }
-
-  .product-bag .bag-cost {
-    margin-left: 0.25rem;
-  }
-}
-.tavi-this-img {
-  max-width:100%; padding-left: 15px; padding-right: 15px;
-}
 .main-btn_list {
   margin-top: 1.5rem;
 }
@@ -900,6 +873,7 @@ body {
   background-color: #fff;
   color: #0A0A0A;
   border: 1px solid #0A0A0A;
+  max-width: 235px;
 }
 
 .main-btn_article:hover {
@@ -1253,7 +1227,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 25px;
+  margin-left: -25px;
 }
 
 .how-work__row {
@@ -1289,7 +1263,6 @@ body {
   -webkit-transition: all .3s;
   transition: all .3s;
   cursor: pointer;
-  flex-basis: 33.333%;
 }
 
 .how-work__item:hover {
@@ -1376,8 +1349,8 @@ body {
 }
 
 .inline-svg-icon {
-  max-width: 50px;
-  max-height: 70px;
+  width: 50px;
+  max-height: 60px;
 }
 
 .inline-svg-icon1 {
@@ -1406,7 +1379,7 @@ body {
 
 @media (max-width: 890px) {
   .how-work__item {
-    max-width: 300px;
+    width: 200px;
   }
   .how-work__row_mr1rem {
     margin-left: 0;
@@ -2053,9 +2026,6 @@ body {
     position: relative;
     z-index: 2;
   }
-  .courses__item .list_and_offer {
-    flex-basis: 100%;
-  }
   .courses__item {
     position: relative;
   }
@@ -2481,7 +2451,10 @@ body {
   padding-bottom: 5rem;
 }
 
-
+.page-courses-choise__page-single .courses_choise__courses_list {
+  -webkit-transform: 0;
+          transform: 0;
+}
 
 .courses_choise {
   position: relative;
@@ -2513,7 +2486,10 @@ body {
   z-index: -1;
 }
 
-
+.courses_choise__courses_list {
+  -webkit-transform: translateX(-95px);
+          transform: translateX(-95px);
+}
 
 .courses_choise__title {
   font-size: 3.5rem;
@@ -2529,7 +2505,8 @@ body {
   }
   .courses_choise__courses_list {
     margin-left: 0;
-
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2608,7 +2585,7 @@ body {
 
 .course-program__title {
   font-size: 2.4rem;
-  margin-right: 4rem;
+  margin-right: 2rem;
 }
 
 .course-program__h3-container {
@@ -2643,10 +2620,6 @@ body {
   .course-program__item:last-child {
     margin-left: 3rem;
     margin-top: 3rem;
-  }
-  .course-program__title {
-    font-size: 2.4rem;
-    margin-right: 0;
   }
 }
 
@@ -2794,19 +2767,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #fff;
-  margin-top: 3rem;
   padding: 1rem 1.5rem;
-  font-size: 1.7rem;
-
+  font-size: 2rem;
   -webkit-box-shadow: 10px 15px 70px rgba(0, 0, 0, 0.1);
           box-shadow: 10px 15px 70px rgba(0, 0, 0, 0.1);
 }
-.block_fff_gradient_text__title {
-  font-weight: 500;
-}
-.list-with-tere {
-  margin-top: 3rem;
-}
+
 .list-with-tere__li:not(:first-child) {
   margin-top: 1rem;
 }
@@ -2832,8 +2798,6 @@ body {
   margin-left: calc(0.5rem + 25px);
 }
 
-
-
 .article_title_text__title {
   font-weight: 500;
   font-size: 1.6rem;
@@ -2845,28 +2809,15 @@ body {
 }
 
 .list_with_li_icon__content {
+  background-color: #fff;
   padding: 2rem 2rem;
   -webkit-box-shadow: 10px 15px 70px rgba(0, 0, 0, 0.1);
           box-shadow: 10px 15px 70px rgba(0, 0, 0, 0.1);
   max-width: 650px;
 }
-.list_with_li_icon__content-fff {
-  background-color: #fff;
-}
-
-.list_with_li_icon_single {
-  margin-top: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 100%;
-  box-shadow: none;
-  
-}
 
 .list_with_li_icon__title {
   font-size: 2.25rem;
-  font-weight: 500;
 }
 
 .list_with_li_icon__list {
@@ -2889,206 +2840,8 @@ body {
 .list_with_li_icon__text {
   margin-left: 1rem;
 }
-       .page_article_wrap {
-            margin-top: 120px;
-        }
 
-        .page_article {
-            margin-top: 35px;
-        }
-
-        .article_container {}
-
-        .article_container__row {
-            flex-wrap: wrap;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center
-        }
-
-        .article_container__item {
-            flex-basis: calc(33.333% - 30px);
-            margin-top: 25px;
-            margin-left: 5px;
-            margin-right: 5px;
-        }
-
-        .article_container__item img {
-            width: 100%;
-            max-width: 100%;
-        }
-
-        .main-btn_article {
-            max-width: 235px;
-        }
-
-        .how-work-list-fff-bg .how-work__item {
-            background-color: #fff;
-        }
-
-
-
-
-/* page-single-article */
-
-.article_title_text {
-  margin-top: 3rem;
-}
-
-.single_article_header_bg{
-  position: relative;
-  z-index: 1;
-  background-image: url(../img/article-bg.jpg);
-  background-position: 50% 50%;
-  padding: 5rem 0; 
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 2rem;
-}
-
-
-.single_article_header {
-  position: relative;
+.how-work-list-fff-bg .how-work__item {
   background-color: #fff;
-  max-width: 650px;
-  padding: 1.5rem 1rem;
-  box-shadow: 10px 15px 70px rgba(0, 0, 0, 0.1);
-
 }
-.single_article_header::before {
-  content: '';
-  position: absolute;
-  left: -50px;
-  top: -50px;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/circle-full-collor.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.single_article_header::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  width: 150%;
-  height: 150%;
-  top: 20px;
-  left: -100px;
-  background-image: url(../img/circle-with-opacity.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-
-}
-
-.single_article_header__title {
-  text-transform: uppercase;
-  font-size: 34px;
-  font-weight: 500;
-}
-
-@media(max-width:900px) {
-  .single_article_header__title {
-    font-size: 22px;
-  }
-  .single_article_header::before  {
-    left: -10px;
-  }
-  .single_article_header::after {
-    left: -10px;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-
-
-.single_article_content {
-  margin-top: 3rem;
-}
-
-.title_none_title {
-  display: inline-block;
-  margin-top: 3rem;
-}
-
-.article_lists_container {
-  display: flex;
-  align-items: stretch;
-  margin-top: 3rem;
-}
-.article_lists_container__item {
-  display: flex;
-
-}
-
-.article_lists_container__item:last-child {
-  margin-left: 2.5rem;
-}
-
-.h2-choose-course span:first-child {
-  font-size: 2.4rem;
-  
-}
-
-.h2-choose-course span:last-child {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.choose_article_container {
-  display: flex;
-  margin-top: 3rem;
-}
-.choose_article_container__row {
-  display: flex;
-}
-
-.choose_article_container__item:not(:first-child) {
-  margin-left: 15px;
-}
-.choose_article_container__row:not(:first-child) {
-  margin-left: 15px;
-}
-
-.read_all_link {
-  display: block;
-  margin-top: 3rem;
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #535353;
-}
-.read_all_link__span {
-  display: inline-block;
-  margin-top: 1rem;
-  font-weight: 500;
-}
-@media(max-width:768px) {
-  .choose_article_container {
-    flex-direction: column;
-  }
-
-  .article_lists_container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .article_lists_container__item:last-child {
-    margin-left: 0;
-    margin-top: 2rem;
-  }
-
-.choose_article_container__item:not(:first-child) {
-  margin-left: 15px;
-}
-.choose_article_container__row:not(:first-child) {
-  margin-left: 0;
-  margin-top: 2rem;
-}
-}
-
-
-
-/* page-single-article */
+/*# sourceMappingURL=style.css.map */
